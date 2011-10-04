@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>ricardo.cc</title>
+	
+	<link rel="stylesheet/less" href="styles/base.less" />
+	<script src="scripts/less.1.1.3.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	
+	<header id="site-header">
+		<div class="bar">
+			<a href="/" class="home" rel="parent">ricardo.cc</a>
+			<p>Reading <em>A little take on CoffeeScript and something else</em></p>
+		</div>
+	</header>
+	
+	<article>
+		
+		<header>
+			<h1>You shouldn't wear those brown boots</h1>
+		</header>
+	
+		<div class="content">
+			<p>Do you frequently open Grooveshark/Pandora/iTunes/etc and just stare at it while trying to decide what to listen next?
+
+			<p>I do it all the time. I probably visit my own last.fm profile a dozen times a week, just so I can take a look at my library and pick a familiar name to put into the search field (yeah, <strong>I dumped Last.FM radio for Grooveshark</strong> - I like to hear whole albums).
+
+			<p>Enter <a href="#">What should I listen to?</a>, the dumbest web service ever. It takes a last.fm username and a click, and gives back lots of love in the form of good music recommendations (actually these recommendations come from yourself, but you gotta give it some credit...)
+				I had a lot of fun building it: 
+				<ul>
+					<li>runs on node.js, courtesy of nodester
+					<li>IDs are saved in localStorage, and your library's size in your cookies (we need to know the range to shoot at), so no database.
+					<li>It has no images per se, the noisy background is generated via Javascript CoffeeScript and the rest is CSS.
+					<li>It's not mobile-ready, though that should be easy to accomplish. Source code is on github.
+				</ul>
+			<p>I hope it's useful for a few people out there. If you have any suggestions you can find me on Twitter.
+		</div>
+	</article>
+	
+</div>
+
+	<footer id="site-footer">
+	</footer>
+	
+</body>
+</html>
